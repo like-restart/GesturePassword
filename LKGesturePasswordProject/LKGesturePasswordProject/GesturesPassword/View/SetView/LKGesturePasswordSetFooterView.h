@@ -1,6 +1,6 @@
 //
 //  LKGesturePasswordSetFooterView.h
-//  融贝网
+//  LKGesturePasswordProject
 //
 //  Created by like on 2018/8/21.
 //  Copyright © 2018年 No Company. All rights reserved.
