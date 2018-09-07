@@ -67,9 +67,29 @@ typedef NS_ENUM(NSInteger, GesturePasswordStateType) {
  */
 - (void)ClearUsersDataAndEnterAPP;
 
+#pragma mark - - Gesture Password Verify Results - -
+/*!
+ * 根据手势验证结果来决定进行页面跳转和数据处理
+ *
+ * @param verifyResults YES:success NO:fail
+ */
+- (void)gesturePasswordSkipOfVerifyResults:(BOOL)verifyResults;
+
+#pragma mark - - Forget Gesture Password - -
+/*!
+ * 点击了忘记手势密码，进入到登录页面重新登录
+ */
+- (void)forgetGesturePassword;
+
+#pragma mark - - Restore Default Configure - -
+/*!
+ * 恢复设置密码状态下的默认配置数据，重新进行密码设置
+ */
+- (void)restoreDefaultConfigureOfSetGesturePassword;
+
 #pragma mark - - Close Current View - -
 /*!
- * 关闭当前页面，返回到上一个页面
+ * 用户点击了关闭按钮
  */
 - (void)closeTheCurrentViewAction;
 @end

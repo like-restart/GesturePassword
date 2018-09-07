@@ -33,5 +33,17 @@ typedef NS_ENUM(NSInteger, UsersTouchIDState)
 
 @interface UIAlertController (LKTouchIDAlertController)
 
+/*!
+ * 启用指纹功能来设置手势密码
+ *
+ * resultsBlock (isVerify:YES-TouchId验证成功|NO-失败 isSaveOfPassword:YES-保存手势密码|NO-不保存)
+ */
 + (void)alertControllerWithResultsBlock:(void(^)(BOOL isVerify, BOOL isSaveOfPassword))resultsBlock;
+
+/*!
+ * 启用指纹功能来验证手势密码
+ *
+ * verifyBlock (isVerify:YES-TouchId验证成功|NO-失败)
+ */
++ (void)alertControllerWithVerifyTouchIDWithBlock:(void(^)(BOOL isVerify))verifyBlock;
 @end

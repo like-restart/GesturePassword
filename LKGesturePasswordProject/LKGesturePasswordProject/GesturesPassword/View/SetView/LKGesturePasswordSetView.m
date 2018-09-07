@@ -135,6 +135,11 @@
         case FooterViewClickType_Reset:
         {
             //重置手势密码
+            //header stateType = frontDraw(恢复初始状态) and button.state = normal
+            [self.setHeaderView restoreLittleSingleButtonControls];
+            //恢复viewmodel中的参数配置
+            [self.setViewModel restoreDefaultConfigureOfSetGesturePassword];
+            
         }
             break;
             

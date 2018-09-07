@@ -34,7 +34,6 @@
 #pragma mark - - Verify Protocol - -
 - (void)gesturePassword:(id)verifyView withVerifyResult:(BOOL)verifyResult
 {
-    NSLog(@"verify result = %d",verifyResult);
     if (GesturePasswordType_Modify == _gestureType) {
         //enter set view
         [self.verifyView removeFromSuperview];
@@ -42,9 +41,7 @@
         
         [self.setView layoutSetViewControls];
     }else {
-        [self dismissViewControllerAnimated:YES completion:^{
-            
-        }];
+        [self.viewModel gesturePasswordSkipOfVerifyResults:verifyResult];
     }
 }
 

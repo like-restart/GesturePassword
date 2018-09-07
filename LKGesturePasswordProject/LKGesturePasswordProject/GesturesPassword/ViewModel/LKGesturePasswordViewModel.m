@@ -210,11 +210,22 @@
     }
     [[NSUserDefaults standardUserDefaults] synchronize];
     
-    //保存之后可以挑转了
-//#error 在这里设置跳转进入APP首页（点击登录-登录页面-登录成功-密码页面-设置成功-APP首页）
+    //保存之后可以挑转了-根据自己的页面方式来决定如何处理返回
     [[LKCodeTools getVisibleViewControler] dismissViewControllerAnimated:YES completion:^{
         
     }];
+}
+
+#pragma mark - - Restore Default Configure - -
+/*!
+ * 恢复设置密码状态下的默认配置数据，重新进行密码设置
+ */
+- (void)restoreDefaultConfigureOfSetGesturePassword
+{
+    isVerifyInput = NO;//默认值为NO，
+    numsOfValidLogin = 5;//默认值为5次
+    
+    self.gesturePasswordString = @"";//密码设置为空字符串
 }
 
 #pragma mark - - Clear Login Data - -
@@ -223,16 +234,40 @@
  */
 - (void)ClearUsersDataAndEnterAPP
 {
-//#error 在这里清空用户登录数据
-    [self saveTouchId:NO withGesturePassword:NO];
+    NSLog(@"手势验证失败，在这里可以添加清除用户信息的代码");
+}
+
+#pragma mark - - Gesture Password Verify Results - -
+/*!
+ * 根据手势验证结果来决定进行页面跳转和数据处理
+ *
+ * @param verifyResults YES:success NO:fail
+ */
+- (void)gesturePasswordSkipOfVerifyResults:(BOOL)verifyResults
+{
+    if (verifyResults) {
+        NSLog(@"手势验证成功，在这里可以添加验证成功的操作代码");
+    }else {
+        [self ClearUsersDataAndEnterAPP];
+    }
+}
+
+#pragma mark - - Forget Gesture Password - -
+/*!
+ * 点击了忘记手势密码，进入到登录页面重新登录
+ */
+- (void)forgetGesturePassword
+{
+    NSLog(@"点击了忘记手势密码，触发此方法，进入登录页面重新登录");
 }
 
 #pragma mark - - Close Current View - -
 /*!
- * 关闭当前页面，返回到上一个页面
+ * 用户点击了关闭按钮
  */
 - (void)closeTheCurrentViewAction
 {
+    NSLog(@"点击了页面关闭按钮，触发此方法，可在此插入关闭页面的具体逻辑处理代码");
     [[LKCodeTools getVisibleViewControler] dismissViewControllerAnimated:YES completion:^{
         
     }];

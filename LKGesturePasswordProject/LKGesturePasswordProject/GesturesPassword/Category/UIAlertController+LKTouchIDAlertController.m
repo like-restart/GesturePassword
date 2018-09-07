@@ -13,6 +13,11 @@
 
 @implementation UIAlertController (LKTouchIDAlertController)
 
+/*!
+ * 启用指纹功能来设置手势密码
+ *
+ * resultsBlock (isVerify:YES-TouchId验证成功|NO-失败 isSaveOfPassword:YES-保存手势密码|NO-不保存)
+ */
 + (void)alertControllerWithResultsBlock:(void(^)(BOOL isVerify, BOOL isSaveOfPassword))resultsBlock
 {
     //init authentication class
@@ -57,6 +62,41 @@
     }
 }
 
+/*!
+ * 启用指纹功能来验证手势密码
+ *
+ * verifyBlock (isVerify:YES-TouchId验证成功|NO-失败)
+ */
++ (void)alertControllerWithVerifyTouchIDWithBlock:(void(^)(BOOL isVerify))verifyBlock
+{
+    //init authentication class
+    LAContext *context = [[LAContext alloc] init];
+    //获取设备是否支持TouchID
+    BOOL isSupportTouchID = [context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:nil];
+    //8.0版本以上支持TouchID - 添加是否开启了指纹解锁
+    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_8_0 && isSupportTouchID && [[[NSUserDefaults standardUserDefaults] objectForKey:@"GESTURE_PASSWORD_LOGIN_VERIFY_KEY"] isEqualToString:@"YES"]) {
+        [self showTouchIdControlsWithContext:context withVerifyBlock:^(VerifyTouchIDState state) {
+            switch (state) {
+                case VerifyTouchIDState_Success:
+                {
+                    //TouchID 验证成功
+                    verifyBlock(YES);
+                }
+                    break;
+                case VerifyTouchIDState_Fail:
+                {
+                    //TouchID 验证失败
+                    verifyBlock(NO);
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
+        }];
+    }
+}
+
 + (void)showTouchIdControlsWithContext:(LAContext *)context withVerifyBlock:(void(^)(VerifyTouchIDState state))verifyBlock
 {
     [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:@"通过Home键验证已有手机指纹" reply:^(BOOL success, NSError * _Nullable error) {
@@ -68,7 +108,6 @@
                 verifyBlock(VerifyTouchIDState_Success);
             });
         }else if(error){//发生错误
-            verifyBlock(VerifyTouchIDState_Fail);
             
             switch (error.code) {
                 case LAErrorAuthenticationFailed:{
@@ -80,18 +119,21 @@
                 case LAErrorUserCancel:{
                     dispatch_async(dispatch_get_main_queue(), ^{
                         NSLog(@"TouchID 被用户手动取消");
+                        verifyBlock(VerifyTouchIDState_Fail);
                     });
                 }
                     break;
                 case LAErrorUserFallback:{
                     dispatch_async(dispatch_get_main_queue(), ^{
                         NSLog(@"用户不使用TouchID,选择手动输入密码");
+                        verifyBlock(VerifyTouchIDState_Fail);
                     });
                 }
                     break;
                 case LAErrorSystemCancel:{
                     dispatch_async(dispatch_get_main_queue(), ^{
                         NSLog(@"TouchID 被系统取消 (如遇到来电,锁屏,按了Home键等)");
+                        verifyBlock(VerifyTouchIDState_Fail);
                     });
                 }
                     break;
@@ -100,6 +142,7 @@
                         NSLog(@"TouchID 无法启动,因为用户没有设置密码");
                         //请先在系统设置－Touch ID与密码中开启
 //#error 在这里进行设置中配置TouchId的弹框提示
+                        verifyBlock(VerifyTouchIDState_Fail);
                     });
                 }
                     break;
@@ -108,6 +151,7 @@
                         NSLog(@"TouchID 无法启动,因为用户没有设置TouchID");
                         //请先在系统设置－Touch ID与密码中开启
 //#error 在这里进行设置中配置TouchId的弹框提示
+                        verifyBlock(VerifyTouchIDState_Fail);
                     });
                 }
                     break;
@@ -126,12 +170,14 @@
                 case LAErrorAppCancel:{
                     dispatch_async(dispatch_get_main_queue(), ^{
                         NSLog(@"当前软件被挂起并取消了授权 (如App进入了后台等)");
+                        verifyBlock(VerifyTouchIDState_Fail);
                     });
                 }
                     break;
                 case LAErrorInvalidContext:{
                     dispatch_async(dispatch_get_main_queue(), ^{
                         NSLog(@"当前软件被挂起并取消了授权 (LAContext对象无效)");
+                        verifyBlock(VerifyTouchIDState_Fail);
                     });
                 }
                     break;

@@ -83,7 +83,22 @@
     UITouch *touch = [touches anyObject];
     //touch的坐标
     CGPoint touchPoint = [touch locationInView:self];
-    [self setHighlightedStateWithPoint:touchPoint withIsTouchesEnded:NO];
+    
+    //防止手势移动到手势键盘范围之外导致连线超出，对x和y进行处理，限制在范围之内
+    CGFloat validPoint_x = touchPoint.x;
+    if (validPoint_x < 0) {
+        validPoint_x = 0;
+    }else if (validPoint_x > self.frame.size.width) {
+        validPoint_x = self.frame.size.width;
+    }
+    
+    CGFloat validPoint_y = touchPoint.y;
+    if (validPoint_y < 0) {
+        validPoint_y = 0;
+    }else if (validPoint_y > self.frame.size.height) {
+        validPoint_y = self.frame.size.height;
+    }
+    [self setHighlightedStateWithPoint:CGPointMake(validPoint_x, validPoint_y) withIsTouchesEnded:NO];
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

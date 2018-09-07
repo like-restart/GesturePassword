@@ -13,6 +13,7 @@
 #import "LKGesturePasswordVerifyFooterView.h"//footer view
 
 #import "LKCodeTools.h"//tools
+#import "UIAlertController+LKTouchIDAlertController.h"//alert con
 
 @interface LKGesturePasswordVerifyView ()<FooterViewClickProtocol, GesturePasswordInputProtocol>
 
@@ -38,6 +39,19 @@
     [self.gestureView layoutSingleButtonControls];
     self.verifyHeaderView.isWrong = NO;//设置为NO
     self.verifyFooterView.clickProtocol = self;//protocol
+    
+    //添加UITouchID的验证
+    [UIAlertController alertControllerWithVerifyTouchIDWithBlock:^(BOOL isVerify) {
+        if (isVerify) {//verify success
+            if ([self.verifyResultProtocol respondsToSelector:@selector(gesturePassword:withVerifyResult:)]) {
+                [self.verifyResultProtocol gesturePassword:self withVerifyResult:YES];
+            }
+        }else {//fail
+            if ([self.verifyResultProtocol respondsToSelector:@selector(gesturePassword:withVerifyResult:)]) {
+                [self.verifyResultProtocol gesturePassword:self withVerifyResult:NO];
+            }
+        }
+    }];
 }
 
 #pragma mark - - Gesture Password Protocol - -
@@ -94,6 +108,7 @@
         {
             //跳转到登录页面
 //#error 在这里添加跳转到登录页面的代码
+            [self.verifyViewModel forgetGesturePassword];
         }
             break;
         case FooterViewClickType_Logout:

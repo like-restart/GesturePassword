@@ -49,6 +49,16 @@
     [self.gestureView changeButtonStateWithStateType:GesturePasswordButtonStateType_Highlighted withArray:buttonIndex_array];
 }
 
+#pragma mark - - Restore Button State - -
+/*!
+ * 恢复头部小手势图标的状态为 默认未选中状态，适用于重设密码功能
+ */
+- (void)restoreLittleSingleButtonControls
+{
+    self.stateType = SetHeaderTitleStateType_FrontDraw;
+    [self.gestureView changeNormalStateTypeWithGestureButton];
+}
+
 #pragma mark - - Setter and Getter - -
 /*!
  * 头部视图中用于展示密码效果的键盘view-gesture

@@ -45,4 +45,10 @@ typedef NS_ENUM(NSInteger, SetHeaderTitleStateType) {
  * @param buttonIndex_array 存放按钮下标值的数组
  */
 - (void)changeHighlightedStateWithArray:(NSArray *)buttonIndex_array;
+
+#pragma mark - - Restore Button State - -
+/*!
+ * 恢复头部小手势图标的状态为 默认未选中状态，适用于重设密码功能
+ */
+- (void)restoreLittleSingleButtonControls;
 @end
