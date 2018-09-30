@@ -1,0 +1,608 @@
+BCSymbolMap Version: 2.0
++[LKCodeTools getContentFont:withContentSize:]
++[LKCodeTools getVisibleViewControler]
++[LKCodeTools traverseViewController:]
+_OBJC_CLASS_$_LKCodeTools
+_OBJC_METACLASS_$_LKCodeTools
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/Tools/LKCodeTools.m
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject
+-[LKGesturePasswordSetFooterView initWithFrame:]
+-[LKGesturePasswordSetFooterView layoutFooterViewControls]
+-[LKGesturePasswordSetFooterView resetAction:]
+-[LKGesturePasswordSetFooterView clickProtocol]
+-[LKGesturePasswordSetFooterView setClickProtocol:]
+_OBJC_CLASS_$_LKGesturePasswordSetFooterView
+_OBJC_IVAR_$_LKGesturePasswordSetFooterView._clickProtocol
+_OBJC_METACLASS_$_LKGesturePasswordSetFooterView
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/View/SetView/LKGesturePasswordSetFooterView.m
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/View/SetView/LKGesturePasswordSetFooterView.h
+CGRectMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+-[LKGesturePasswordViewModel init]
+-[LKGesturePasswordViewModel dealWithGesturePasswordWithType:withButtonIndex:withInputState:withResultsBlock:]
+-[LKGesturePasswordViewModel saveGesturePasswordWithButtonIndex:]
+-[LKGesturePasswordViewModel saveVerifyGesturePasswordWithButtonIndex:]
+-[LKGesturePasswordViewModel verifyGesturePassword]
+-[LKGesturePasswordViewModel saveTouchId:withGesturePassword:]
+___62-[LKGesturePasswordViewModel saveTouchId:withGesturePassword:]_block_invoke
+-[LKGesturePasswordViewModel restoreDefaultConfigureOfSetGesturePassword]
+-[LKGesturePasswordViewModel ClearUsersDataAndEnterAPP]
+-[LKGesturePasswordViewModel gesturePasswordSkipOfVerifyResults:]
+-[LKGesturePasswordViewModel forgetGesturePassword]
+-[LKGesturePasswordViewModel closeTheCurrentViewAction]
+___55-[LKGesturePasswordViewModel closeTheCurrentViewAction]_block_invoke
+-[LKGesturePasswordViewModel setGesturePasswordString:]
+-[LKGesturePasswordViewModel gesturePasswordString]
+-[LKGesturePasswordViewModel setVerifyGesturePasswordString:]
+-[LKGesturePasswordViewModel verifyGesturePasswordString]
+-[LKGesturePasswordViewModel gestureType]
+-[LKGesturePasswordViewModel setGestureType:]
+-[LKGesturePasswordViewModel .cxx_destruct]
+_OBJC_CLASS_$_LKGesturePasswordViewModel
+_OBJC_IVAR_$_LKGesturePasswordViewModel.isVerifyInput
+_OBJC_IVAR_$_LKGesturePasswordViewModel.numsOfValidLogin
+_OBJC_IVAR_$_LKGesturePasswordViewModel.minLimitOfGesturePassword
+_OBJC_IVAR_$_LKGesturePasswordViewModel._gesturePasswordString
+___block_descriptor_tmp
+___block_literal_global
+___block_descriptor_tmp.83
+___block_literal_global.84
+_OBJC_IVAR_$_LKGesturePasswordViewModel._verifyGesturePasswordString
+_OBJC_IVAR_$_LKGesturePasswordViewModel._gestureType
+_OBJC_METACLASS_$_LKGesturePasswordViewModel
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/ViewModel/LKGesturePasswordViewModel.m
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/ViewModel/LKGesturePasswordViewModel.h
+__55-[LKGesturePasswordViewModel closeTheCurrentViewAction]_block_invoke
+__62-[LKGesturePasswordViewModel saveTouchId:withGesturePassword:]_block_invoke
+-[LKGesturePasswordVerifyFooterView initWithFrame:]
+-[LKGesturePasswordVerifyFooterView layoutFooterViewControls]
+-[LKGesturePasswordVerifyFooterView logoutAction:]
+-[LKGesturePasswordVerifyFooterView forgetPasswordAction:]
+-[LKGesturePasswordVerifyFooterView clickProtocol]
+-[LKGesturePasswordVerifyFooterView setClickProtocol:]
+_OBJC_CLASS_$_LKGesturePasswordVerifyFooterView
+_OBJC_IVAR_$_LKGesturePasswordVerifyFooterView._clickProtocol
+_OBJC_METACLASS_$_LKGesturePasswordVerifyFooterView
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/View/VerifyView/LKGesturePasswordVerifyFooterView.m
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/View/VerifyView/LKGesturePasswordVerifyFooterView.h
+-[ViewController viewDidLoad]
+-[ViewController didReceiveMemoryWarning]
+-[ViewController clickButtonAction:]
+-[ViewController setPasswordButton]
+-[ViewController verifyPasswordButton]
+-[ViewController modifyPasswordButton]
+-[ViewController setSetPasswordButton:]
+-[ViewController setVerifyPasswordButton:]
+-[ViewController setModifyPasswordButton:]
+-[ViewController .cxx_destruct]
+_OBJC_CLASS_$_ViewController
+_OBJC_CLASS_$_LKGesturePasswordViewController
+_OBJC_IVAR_$_ViewController._setPasswordButton
+_OBJC_IVAR_$_ViewController._verifyPasswordButton
+_OBJC_IVAR_$_ViewController._modifyPasswordButton
+_OBJC_METACLASS_$_ViewController
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/ViewController.m
++[UIAlertController(LKTouchIDAlertController) alertControllerWithResultsBlock:]
+___79+[UIAlertController(LKTouchIDAlertController) alertControllerWithResultsBlock:]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
+___79+[UIAlertController(LKTouchIDAlertController) alertControllerWithResultsBlock:]_block_invoke.20
+___79+[UIAlertController(LKTouchIDAlertController) alertControllerWithResultsBlock:]_block_invoke_2
+___copy_helper_block_.21
+___destroy_helper_block_.22
+___copy_helper_block_.27
+___destroy_helper_block_.28
+___79+[UIAlertController(LKTouchIDAlertController) alertControllerWithResultsBlock:]_block_invoke.33
++[UIAlertController(LKTouchIDAlertController) alertControllerWithVerifyTouchIDWithBlock:]
+___89+[UIAlertController(LKTouchIDAlertController) alertControllerWithVerifyTouchIDWithBlock:]_block_invoke
+___copy_helper_block_.49
+___destroy_helper_block_.50
++[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]
+___94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke
+___94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke_2
+___copy_helper_block_.56
+___destroy_helper_block_.57
+___94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke.61
+___94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke_2.66
+___copy_helper_block_.69
+___destroy_helper_block_.70
+___94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke.72
+___copy_helper_block_.75
+___destroy_helper_block_.76
+___94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke.78
+___copy_helper_block_.81
+___destroy_helper_block_.82
+___94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke.84
+___copy_helper_block_.87
+___destroy_helper_block_.88
+___94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke.90
+___copy_helper_block_.93
+___destroy_helper_block_.94
+___94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke.96
+___94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke_2.101
+___94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke_3
+___copy_helper_block_.108
+___destroy_helper_block_.109
+___94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke.111
+___copy_helper_block_.114
+___destroy_helper_block_.115
+___copy_helper_block_.117
+___destroy_helper_block_.118
+___block_descriptor_tmp.24
+___block_descriptor_tmp.29
+___block_descriptor_tmp.35
+___block_descriptor_tmp.51
+___block_descriptor_tmp.58
+___block_descriptor_tmp.62
+___block_literal_global.63
+___block_descriptor_tmp.71
+___block_descriptor_tmp.77
+___block_descriptor_tmp.89
+___block_descriptor_tmp.95
+___block_descriptor_tmp.97
+___block_literal_global.98
+___block_descriptor_tmp.102
+___block_literal_global.103
+___block_descriptor_tmp.110
+___block_descriptor_tmp.116
+___block_descriptor_tmp.120
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/Category/UIAlertController+LKTouchIDAlertController.m
+__destroy_helper_block_
+__copy_helper_block_
+__94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke.111
+__94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke_3
+__94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke_2.101
+__94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke.96
+__94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke.90
+__94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke.84
+__94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke.78
+__94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke.72
+__94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke_2.66
+__94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke.61
+__94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke_2
+__94+[UIAlertController(LKTouchIDAlertController) showTouchIdControlsWithContext:withVerifyBlock:]_block_invoke
+__89+[UIAlertController(LKTouchIDAlertController) alertControllerWithVerifyTouchIDWithBlock:]_block_invoke
+__79+[UIAlertController(LKTouchIDAlertController) alertControllerWithResultsBlock:]_block_invoke.33
+__79+[UIAlertController(LKTouchIDAlertController) alertControllerWithResultsBlock:]_block_invoke_2
+__79+[UIAlertController(LKTouchIDAlertController) alertControllerWithResultsBlock:]_block_invoke.20
+__79+[UIAlertController(LKTouchIDAlertController) alertControllerWithResultsBlock:]_block_invoke
++[UIColor(LKColorTools) colorWithHex:]
++[UIColor(LKColorTools) colorWithHex:alpha:]
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/Tools/UIColor+LKColorTools.m
+_OBJC_CLASS_$_AppDelegate
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/main.m
+main
+-[LKGesturePasswordSingleButton layoutSingleButtonControls]
+-[LKGesturePasswordSingleButton setStateType:]
+-[LKGesturePasswordSingleButton normalImageName]
+-[LKGesturePasswordSingleButton highlightedImageName]
+-[LKGesturePasswordSingleButton errorImageName]
+-[LKGesturePasswordSingleButton stateType]
+-[LKGesturePasswordSingleButton setNormalImageName:]
+-[LKGesturePasswordSingleButton setHighlightedImageName:]
+-[LKGesturePasswordSingleButton setErrorImageName:]
+-[LKGesturePasswordSingleButton .cxx_destruct]
+_OBJC_IVAR_$_LKGesturePasswordSingleButton._stateType
+_OBJC_IVAR_$_LKGesturePasswordSingleButton._normalImageName
+_OBJC_IVAR_$_LKGesturePasswordSingleButton._highlightedImageName
+_OBJC_IVAR_$_LKGesturePasswordSingleButton._errorImageName
+_OBJC_METACLASS_$_LKGesturePasswordSingleButton
+_OBJC_CLASS_$_LKGesturePasswordSingleButton
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/View/PublicGesture/LKGesturePasswordSingleButton.m
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/View/PublicGesture/LKGesturePasswordSingleButton.h
+-[LKGesturePasswordSetView initWithFrame:]
+-[LKGesturePasswordSetView layoutSetViewControls]
+-[LKGesturePasswordSetView gesturePasswordWithButtonIndex:withInputState:]
+___74-[LKGesturePasswordSetView gesturePasswordWithButtonIndex:withInputState:]_block_invoke
+___74-[LKGesturePasswordSetView gesturePasswordWithButtonIndex:withInputState:]_block_invoke_2
+___74-[LKGesturePasswordSetView gesturePasswordWithButtonIndex:withInputState:]_block_invoke.49
+___copy_helper_block_.52
+___destroy_helper_block_.53
+___74-[LKGesturePasswordSetView gesturePasswordWithButtonIndex:withInputState:]_block_invoke.58
+___copy_helper_block_.59
+___destroy_helper_block_.60
+___copy_helper_block_.62
+___destroy_helper_block_.63
+-[LKGesturePasswordSetView footerView:withClickType:]
+-[LKGesturePasswordSetView clickCloseAction:]
+-[LKGesturePasswordSetView gestureView]
+-[LKGesturePasswordSetView setHeaderView]
+-[LKGesturePasswordSetView setFooterView]
+-[LKGesturePasswordSetView closeButton]
+-[LKGesturePasswordSetView setViewModel]
+-[LKGesturePasswordSetView setSetViewModel:]
+-[LKGesturePasswordSetView setGestureView:]
+-[LKGesturePasswordSetView setSetHeaderView:]
+-[LKGesturePasswordSetView setSetFooterView:]
+-[LKGesturePasswordSetView setCloseButton:]
+-[LKGesturePasswordSetView .cxx_destruct]
+_OBJC_CLASS_$_LKGesturePasswordSetView
+___block_descriptor_tmp.55
+___block_descriptor_tmp.61
+___block_descriptor_tmp.65
+_OBJC_IVAR_$_LKGesturePasswordSetView._gestureView
+_OBJC_CLASS_$_LKGesturePasswordView
+_OBJC_IVAR_$_LKGesturePasswordSetView._setHeaderView
+_OBJC_CLASS_$_LKGesturePasswordSetHeaderView
+_OBJC_IVAR_$_LKGesturePasswordSetView._setFooterView
+_OBJC_IVAR_$_LKGesturePasswordSetView._closeButton
+_OBJC_IVAR_$_LKGesturePasswordSetView._setViewModel
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_GesturePasswordInputProtocol
+l_OBJC_LABEL_PROTOCOL_$_GesturePasswordInputProtocol
+l_OBJC_PROTOCOL_$_FooterViewClickProtocol
+l_OBJC_LABEL_PROTOCOL_$_FooterViewClickProtocol
+_OBJC_METACLASS_$_LKGesturePasswordSetView
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/View/SetView/LKGesturePasswordSetView.m
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/View/SetView/LKGesturePasswordSetView.h
+__CGSizeEqualToSize
+__74-[LKGesturePasswordSetView gesturePasswordWithButtonIndex:withInputState:]_block_invoke.58
+__74-[LKGesturePasswordSetView gesturePasswordWithButtonIndex:withInputState:]_block_invoke.49
+__74-[LKGesturePasswordSetView gesturePasswordWithButtonIndex:withInputState:]_block_invoke_2
+__74-[LKGesturePasswordSetView gesturePasswordWithButtonIndex:withInputState:]_block_invoke
+-[LKGesturePasswordSetHeaderView layoutSetHeaderViewControls]
+-[LKGesturePasswordSetHeaderView changeHighlightedStateWithArray:]
+-[LKGesturePasswordSetHeaderView restoreLittleSingleButtonControls]
+-[LKGesturePasswordSetHeaderView gestureView]
+-[LKGesturePasswordSetHeaderView headerTitleLabel]
+-[LKGesturePasswordSetHeaderView setStateType:]
+-[LKGesturePasswordSetHeaderView stateType]
+-[LKGesturePasswordSetHeaderView setGestureView:]
+-[LKGesturePasswordSetHeaderView setHeaderTitleLabel:]
+-[LKGesturePasswordSetHeaderView .cxx_destruct]
+_OBJC_IVAR_$_LKGesturePasswordSetHeaderView._gestureView
+_OBJC_IVAR_$_LKGesturePasswordSetHeaderView._headerTitleLabel
+_OBJC_IVAR_$_LKGesturePasswordSetHeaderView._stateType
+_OBJC_METACLASS_$_LKGesturePasswordSetHeaderView
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/View/SetView/LKGesturePasswordSetHeaderView.m
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/View/SetView/LKGesturePasswordSetHeaderView.h
+-[LKGesturePasswordViewController viewDidLoad]
+-[LKGesturePasswordViewController didReceiveMemoryWarning]
+-[LKGesturePasswordViewController gesturePassword:withVerifyResult:]
+-[LKGesturePasswordViewController verifyView]
+-[LKGesturePasswordViewController setView]
+-[LKGesturePasswordViewController viewModel]
+-[LKGesturePasswordViewController setGestureType:]
+-[LKGesturePasswordViewController gestureType]
+-[LKGesturePasswordViewController setVerifyView:]
+-[LKGesturePasswordViewController setSetView:]
+-[LKGesturePasswordViewController setViewModel:]
+-[LKGesturePasswordViewController .cxx_destruct]
+_OBJC_IVAR_$_LKGesturePasswordViewController._gestureType
+_OBJC_IVAR_$_LKGesturePasswordViewController._verifyView
+_OBJC_CLASS_$_LKGesturePasswordVerifyView
+_OBJC_IVAR_$_LKGesturePasswordViewController._setView
+_OBJC_IVAR_$_LKGesturePasswordViewController._viewModel
+l_OBJC_PROTOCOL_$_GesturePasswordVerifyResultProtocol
+l_OBJC_LABEL_PROTOCOL_$_GesturePasswordVerifyResultProtocol
+_OBJC_METACLASS_$_LKGesturePasswordViewController
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/Controller/LKGesturePasswordViewController.m
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/Controller/LKGesturePasswordViewController.h
++[NSMutableArray(LKCombinationMutableArray) combinationArrayWithString:]
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/Category/NSMutableArray+LKCombinationMutableArray.m
++[NSMutableAttributedString(LKAttributedString) decorateAttributedString:]
++[NSMutableAttributedString(LKAttributedString) decorateAmountAttributedString:]
++[NSMutableAttributedString(LKAttributedString) decorateInterestAttributedString:withIsValid:]
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/Tools/NSMutableAttributedString+LKAttributedString.m
+-[CALayer(LKShakeAnimation) shakeOfAnimation]
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/Category/CALayer+LKShakeAnimation.m
+-[LKGesturePasswordView layoutSingleButtonControls]
+-[LKGesturePasswordView layoutLittleSingleButtonControls]
+-[LKGesturePasswordView touchesBegan:withEvent:]
+-[LKGesturePasswordView touchesMoved:withEvent:]
+-[LKGesturePasswordView touchesEnded:withEvent:]
+-[LKGesturePasswordView setHighlightedStateWithPoint:withIsTouchesEnded:]
+-[LKGesturePasswordView getButtonTagWithPoint:]
+-[LKGesturePasswordView layoutShapeLayerWithButton:]
+-[LKGesturePasswordView getShapeLayerWithStartPoint:withEndPoint:]
+-[LKGesturePasswordView getPossibleButtonWithStartPoint:withEndPoint:]
+-[LKGesturePasswordView changeButtonStateWithStateType:withArray:]
+-[LKGesturePasswordView changeErrorColorWithShapeLayerLine]
+-[LKGesturePasswordView changeErrorStateTypeWithGestureButton]
+-[LKGesturePasswordView removeShapeLayerFromView]
+-[LKGesturePasswordView changeNormalStateTypeWithGestureButton]
+-[LKGesturePasswordView intervalGestureView]
+-[LKGesturePasswordView pointsArray]
+-[LKGesturePasswordView setLineShapeLayer:]
+-[LKGesturePasswordView centerPointArray]
+-[LKGesturePasswordView gestureInputProtocol]
+-[LKGesturePasswordView setGestureInputProtocol:]
+-[LKGesturePasswordView setPointsArray:]
+-[LKGesturePasswordView setIntervalGestureView:]
+-[LKGesturePasswordView lineShapeLayer]
+-[LKGesturePasswordView setCenterPointArray:]
+-[LKGesturePasswordView .cxx_destruct]
+_OBJC_IVAR_$_LKGesturePasswordView.theLastButtonIndex
+_OBJC_IVAR_$_LKGesturePasswordView._intervalGestureView
+_OBJC_IVAR_$_LKGesturePasswordView._pointsArray
+_OBJC_IVAR_$_LKGesturePasswordView._lineShapeLayer
+_OBJC_IVAR_$_LKGesturePasswordView._centerPointArray
+_OBJC_IVAR_$_LKGesturePasswordView._gestureInputProtocol
+_OBJC_METACLASS_$_LKGesturePasswordView
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/View/PublicGesture/LKGesturePasswordView.m
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/View/PublicGesture/LKGesturePasswordView.h
+CGPointMake
+-[LKGesturePasswordVerifyView layoutVerifyViewControls]
+___55-[LKGesturePasswordVerifyView layoutVerifyViewControls]_block_invoke
+-[LKGesturePasswordVerifyView gesturePasswordWithButtonIndex:withInputState:]
+___77-[LKGesturePasswordVerifyView gesturePasswordWithButtonIndex:withInputState:]_block_invoke
+___77-[LKGesturePasswordVerifyView gesturePasswordWithButtonIndex:withInputState:]_block_invoke_2
+___copy_helper_block_.51
+___destroy_helper_block_.52
+___copy_helper_block_.55
+___destroy_helper_block_.56
+-[LKGesturePasswordVerifyView footerView:withClickType:]
+-[LKGesturePasswordVerifyView clickCloseAction:]
+-[LKGesturePasswordVerifyView gestureView]
+-[LKGesturePasswordVerifyView verifyHeaderView]
+-[LKGesturePasswordVerifyView verifyFooterView]
+-[LKGesturePasswordVerifyView closeButton]
+-[LKGesturePasswordVerifyView verifyViewModel]
+-[LKGesturePasswordVerifyView setVerifyViewModel:]
+-[LKGesturePasswordVerifyView verifyResultProtocol]
+-[LKGesturePasswordVerifyView setVerifyResultProtocol:]
+-[LKGesturePasswordVerifyView setGestureView:]
+-[LKGesturePasswordVerifyView setVerifyHeaderView:]
+-[LKGesturePasswordVerifyView setVerifyFooterView:]
+-[LKGesturePasswordVerifyView setCloseButton:]
+-[LKGesturePasswordVerifyView .cxx_destruct]
+___block_descriptor_tmp.54
+_OBJC_IVAR_$_LKGesturePasswordVerifyView._gestureView
+_OBJC_IVAR_$_LKGesturePasswordVerifyView._verifyHeaderView
+_OBJC_CLASS_$_LKGesturePasswordVerifyHeaderView
+_OBJC_IVAR_$_LKGesturePasswordVerifyView._verifyFooterView
+_OBJC_IVAR_$_LKGesturePasswordVerifyView._closeButton
+_OBJC_IVAR_$_LKGesturePasswordVerifyView._verifyViewModel
+_OBJC_IVAR_$_LKGesturePasswordVerifyView._verifyResultProtocol
+_OBJC_METACLASS_$_LKGesturePasswordVerifyView
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/View/VerifyView/LKGesturePasswordVerifyView.m
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/View/VerifyView/LKGesturePasswordVerifyView.h
+__77-[LKGesturePasswordVerifyView gesturePasswordWithButtonIndex:withInputState:]_block_invoke_2
+__77-[LKGesturePasswordVerifyView gesturePasswordWithButtonIndex:withInputState:]_block_invoke
+__55-[LKGesturePasswordVerifyView layoutVerifyViewControls]_block_invoke
+-[AppDelegate application:didFinishLaunchingWithOptions:]
+-[AppDelegate applicationWillResignActive:]
+-[AppDelegate applicationDidEnterBackground:]
+-[AppDelegate applicationWillEnterForeground:]
+-[AppDelegate applicationDidBecomeActive:]
+-[AppDelegate applicationWillTerminate:]
+-[AppDelegate window]
+-[AppDelegate setWindow:]
+-[AppDelegate .cxx_destruct]
+_OBJC_IVAR_$_AppDelegate._window
+l_OBJC_PROTOCOL_$_UIApplicationDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
+_OBJC_METACLASS_$_AppDelegate
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/AppDelegate.m
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/AppDelegate.h
+-[LKGesturePasswordVerifyHeaderView initWithFrame:]
+-[LKGesturePasswordVerifyHeaderView setIsWrong:]
+-[LKGesturePasswordVerifyHeaderView headerImageView]
+-[LKGesturePasswordVerifyHeaderView headerTitleLabel]
+-[LKGesturePasswordVerifyHeaderView isWrong]
+-[LKGesturePasswordVerifyHeaderView numsOfValidLogin]
+-[LKGesturePasswordVerifyHeaderView setNumsOfValidLogin:]
+-[LKGesturePasswordVerifyHeaderView setHeaderImageView:]
+-[LKGesturePasswordVerifyHeaderView setHeaderTitleLabel:]
+-[LKGesturePasswordVerifyHeaderView .cxx_destruct]
+_OBJC_IVAR_$_LKGesturePasswordVerifyHeaderView._headerImageView
+_OBJC_IVAR_$_LKGesturePasswordVerifyHeaderView._headerTitleLabel
+_OBJC_IVAR_$_LKGesturePasswordVerifyHeaderView._isWrong
+_OBJC_IVAR_$_LKGesturePasswordVerifyHeaderView._numsOfValidLogin
+_OBJC_METACLASS_$_LKGesturePasswordVerifyHeaderView
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/View/VerifyView/LKGesturePasswordVerifyHeaderView.m
+/Users/like/Desktop/StudyProductTest/GesturePassword/LKGesturePasswordProject/LKGesturePasswordProject/GesturesPassword/View/VerifyView/LKGesturePasswordVerifyHeaderView.h
+__ZL15__ARCLite__loadv
+__ZL30add_image_hook_autoreleasepoolPK11mach_headerl
+__ZL34__arclite_objc_autoreleasePoolPushv
+__ZL33__arclite_objc_autoreleasePoolPopPv
+__ZL19patch_lazy_pointersPK11mach_headerP7patch_tm
+__ZL42__arclite_NSArray_objectAtIndexedSubscriptP7NSArrayP13objc_selectorj
+__ZL53__arclite_NSMutableArray_setObject_atIndexedSubscriptP14NSMutableArrayP13objc_selectorP11objc_objectj
+__ZL46__arclite_NSDictionary_objectForKeyedSubscriptP12NSDictionaryP13objc_selectorP11objc_object
+__ZL47__arclite_NSOrderedSet_objectAtIndexedSubscriptP12NSOrderedSetP13objc_selectorj
+__ZL58__arclite_NSMutableOrderedSet_setObject_atIndexedSubscriptP19NSMutableOrderedSetP13objc_selectorP11objc_objectj
+__ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
+__ZL18add_image_hook_ARCPK11mach_headerl
+__ZL36__arclite_object_setInstanceVariableP11objc_objectPKcPv
+__ZL24__arclite_object_setIvarP11objc_objectP9objc_ivarS0_
+__ZL21__arclite_object_copyP11objc_objectm
+__ZL21__arclite_objc_retainP11objc_object
+__ZL26__arclite_objc_retainBlockP11objc_object
+__ZL22__arclite_objc_releaseP11objc_object
+__ZL26__arclite_objc_autoreleaseP11objc_object
+__ZL32__arclite_objc_retainAutoreleaseP11objc_object
+__ZL37__arclite_objc_autoreleaseReturnValueP11objc_object
+__ZL43__arclite_objc_retainAutoreleaseReturnValueP11objc_object
+__ZL44__arclite_objc_retainAutoreleasedReturnValueP11objc_object
+__ZL26__arclite_objc_storeStrongPP11objc_objectS0_
+__ZL22add_image_hook_swiftV1PK11mach_headerl
+__ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
+__ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
+__ZL41__arclite_NSManagedObject_allocWithEntityP11objc_objectP13objc_selectorS0_
+__ZL36__arclite_NSManagedObject_allocBatchP11objc_objectP13objc_selectorPS0_S0_j
+__ZL37__arclite_NSKKMS_fastIndexForKnownKeyP11objc_objectP13objc_selectorS0_
+__ZL28__arclite_NSKKMS_indexForKeyP11objc_objectP13objc_selectorS0_
+__ZL29__arclite_NSKKsD_objectForKeyP11objc_objectP13objc_selectorS0_
+__ZL35__arclite_NSKKsD_removeObjectForKeyP11objc_objectP13objc_selectorS0_
+__ZL33__arclite_NSKKsD_setObject_forKeyP11objc_objectP13objc_selectorS0_S0_
+__ZL41__arclite_NSKKsD_addEntriesFromDictionaryP11objc_objectP13objc_selectorP12NSDictionary
+__ZL28__arclite_objc_readClassPairP10objc_classPK15objc_image_info
+__ZL32__arclite_objc_allocateClassPairP10objc_classPKcm
+__ZL32__arclite_object_getIndexedIvarsP11objc_object
+__ZL23__arclite_objc_getClassPKc
+__ZL27__arclite_objc_getMetaClassPKc
+__ZL31__arclite_objc_getRequiredClassPKc
+__ZL26__arclite_objc_lookUpClassPKc
+__ZL26__arclite_objc_getProtocolPKc
+__ZL23__arclite_class_getNameP10objc_class
+__ZL26__arclite_protocol_getNameP8Protocol
+__ZL37__arclite_objc_copyClassNamesForImagePKcPj
+__ZL17transcribeMethodsP10objc_classP15glue_class_ro_t
+__ZL19transcribeProtocolsP10objc_classP15glue_class_ro_t
+__ZL20transcribePropertiesP10objc_classP15glue_class_ro_t
+__ZL14initialize_impP11objc_objectP13objc_selector
+__ZL18allocateMaybeSwiftP18glue_swift_class_tm
+__ZL22copySwiftV1MangledNamePKcb
+__ZL13demangledNamePKcb
+__ZL16scanMangledFieldRPKcS0_S1_Ri
+__ZL30arclite_uninitialized_functionv
+__ZL12cxxConstructP11objc_object
+__ZL20fixStringForCoreDataP11objc_object
+_OBJC_METACLASS_$___ARCLite__
+__ZL24OBJC_CLASS_$___ARCLite__
+__ZL31OBJC_METACLASS_RO_$___ARCLite__
+__non_lazy_classes
+__ZL27OBJC_CLASS_RO_$___ARCLite__
+__ZL11_class_name
+__ZL32OBJC_$_CLASS_METHODS___ARCLite__
+__ZL17_load_method_name
+__ZL17_load_method_type
+__ZL23NSAutoreleasePool_class
+__ZZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
+__ZGVZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
+l_OBJC_PROTOCOL_$___ARCLiteIndexedSubscripting__
+l_OBJC_LABEL_PROTOCOL_$___ARCLiteIndexedSubscripting__
+l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteIndexedSubscripting__
+l_OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
+__ZZL18add_image_hook_ARCPK11mach_headerlE7patches
+__ZGVZL18add_image_hook_ARCPK11mach_headerlE7patches
+__ZL30NSUndoManagerProxy_targetClass
+__ZL29original_NSManagedObject_init
+__ZL40original_NSManagedObject_allocWithEntity
+__ZL35original_NSManagedObject_allocBatch
+__ZL25NSMutableDictionary_class
+__ZL22NSConstantString_class
+__ZL14NSString_class
+__ZL36original_NSKKMS_fastIndexForKnownKey
+__ZL27original_NSKKMS_indexForKey
+__ZL28original_NSKKsD_objectForKey
+__ZL34original_NSKKsD_removeObjectForKey
+__ZL32original_NSKKsD_setObject_forKey
+__ZL40original_NSKKsD_addEntriesFromDictionary
+__ZZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZGVZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZL31original_objc_allocateClassPair
+__ZL31original_object_getIndexedIvars
+__ZL22original_objc_getClass
+__ZL26original_objc_getMetaClass
+__ZL30original_objc_getRequiredClass
+__ZL25original_objc_lookUpClass
+__ZL25original_objc_getProtocol
+__ZL22original_class_getName
+__ZL25original_protocol_getName
+__ZL36original_objc_copyClassNamesForImage
+__ZL12demangleLock
+__ZL9Demangled
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/armv7 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.o -mlinker-version=351.8 -march=armv7a
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67/source/arclite.mm
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67
+fixStringForCoreData
+cxxConstruct
+arclite_uninitialized_function
+scanMangledField
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.Internal.sdk/usr/include/_ctype.h
+__isctype
+demangledName
+copySwiftV1DemangledName
+copySwiftV1MangledName
+allocateMaybeSwift
+word_align
+isSwift
+initialize_imp
+transcribeProperties
+property_list_nth
+transcribeProtocols
+transcribeMethods
+data
+method_list_nth
+__arclite_objc_copyClassNamesForImage
+__arclite_protocol_getName
+__arclite_class_getName
+__arclite_objc_getProtocol
+__arclite_objc_lookUpClass
+__arclite_objc_getRequiredClass
+__arclite_objc_getMetaClass
+__arclite_objc_getClass
+__arclite_object_getIndexedIvars
+__arclite_objc_allocateClassPair
+metaclass
+__arclite_objc_readClassPair
+transcribeIvars
+ivar_list_nth
+max
+alignment
+ro
+fastFlags
+__arclite_NSKKsD_addEntriesFromDictionary
+__arclite_NSKKsD_setObject_forKey
+__arclite_NSKKsD_removeObjectForKey
+__arclite_NSKKsD_objectForKey
+__arclite_NSKKMS_indexForKey
+__arclite_NSKKMS_fastIndexForKnownKey
+__arclite_NSManagedObject_allocBatch
+__arclite_NSManagedObject_allocWithEntity
+__arclite_NSManagedObject_init
+__arclite_NSUndoManagerProxy_isKindOfClass
+add_image_hook_swiftV1
+patch_t<const char **(const char *, unsigned int *)>
+patch_t<const char *(Protocol *)>
+patch_t<const char *(Class)>
+patch_t<Protocol *(const char *)>
+patch_t<Class (const char *)>
+patch_t<void *(id)>
+patch_t<Class (Class, const char *, unsigned long)>
+patch_t<Class (Class, const objc_image_info *)>
+__arclite_objc_storeStrong
+__arclite_objc_release
+__arclite_objc_retain
+__arclite_objc_retainAutoreleasedReturnValue
+__arclite_objc_retainAutoreleaseReturnValue
+__arclite_objc_autoreleaseReturnValue
+__arclite_objc_retainAutorelease
+__arclite_objc_autorelease
+__arclite_objc_retainBlock
+__arclite_object_copy
+fixupCopiedReferences
+_class_getInstanceStart
+alignedInstanceStart
+__arclite_class_usesAutomaticRetainRelease
+classOrSuperClassesUseARR
+__arclite_object_setIvar
+isScannedOffset
+_ivar_getClass
+__arclite_object_setInstanceVariable
+add_image_hook_ARC
+patch_t<void (id *, id)>
+patch_t<id (id)>
+patch_t<void (id)>
+patch_t<id (id, unsigned long)>
+patch_t<void (id, objc_ivar *, id)>
+patch_t<objc_ivar *(id, const char *, void *)>
+__arclite_NSMutableDictionary__setObject_forKeyedSubscript
+__arclite_NSMutableOrderedSet_setObject_atIndexedSubscript
+__arclite_NSOrderedSet_objectAtIndexedSubscript
+__arclite_NSDictionary_objectForKeyedSubscript
+__arclite_NSMutableArray_setObject_atIndexedSubscript
+__arclite_NSArray_objectAtIndexedSubscript
+patch_lazy_pointers
+__arclite_objc_autoreleasePoolPop
+__arclite_objc_autoreleasePoolPush
+add_image_hook_autoreleasepool
+patch_t<void (void *)>
+patch_t<void *()>
+__ARCLite__load
+install_swiftV1
+replaceMethod
+install_ARC
+install_dict_nil_value
+addOrReplaceMethod
+keyedGetter
+install_subscripting
+addMethod
+indexedGetter
+install_autoreleasepool
